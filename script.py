@@ -10,8 +10,13 @@ class Student:
 
 class Grade:
   minimum_passing = 65
+
   def __init__(self, score):
     self.score = score
+
+  def is_passing(self):
+    if self.score >= self.minimum_passing:
+        return True
 
 roger = Student("Roger van der Weyden", 10)
 sandro = Student("Sandro Botticelli", 12)
