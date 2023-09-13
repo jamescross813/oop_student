@@ -6,7 +6,17 @@ class Student:
 
   def add_grade(self, grade):
     if type(grade) is Grade:
-      self.grades.append(grade)
+      return self.grades.append(grade)
+  
+  def get_avg(self):
+    curr = 0
+    i=0
+    for grade in grades:
+      curr+=grade
+      i+=1
+    avg = curr/i
+    return avg
+
 
 class Grade:
   minimum_passing = 65
