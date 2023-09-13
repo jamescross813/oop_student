@@ -20,3 +20,10 @@ pieter = Student("Pieter Bruegel the Elder", 8)
 print(roger.name, roger.year)
 print(sandro.name, sandro.year)
 print(pieter.name, pieter.year)
+
+new_grade = Grade(100)
+pieter.add_grade(new_grade)
+print(pieter.grades)
+not_grade = 100
+sandro.add_grade(not_grade)
+print(sandro.grades)
