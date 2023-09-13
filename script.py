@@ -2,7 +2,11 @@ class Student:
   def __init__(self, name, year):
     self.name = name
     self.year = year
+    self.grades = []
 
+  def add_grade(self, grade):
+    if type(grade) is Grade:
+      self.grades.append(grade)
 
 class Grade:
   minimum_passing = 65
