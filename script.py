@@ -5,7 +5,9 @@ class Student:
 
 
 class Grade:
-  pass
+  minimum_passing = 65
+  def __init__(self, score):
+    self.score = score
 
 roger = Student("Roger van der Weyden", 10)
 sandro = Student("Sandro Botticelli", 12)
