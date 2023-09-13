@@ -11,7 +11,7 @@ class Student:
   def get_avg(self):
     curr = 0
     i=0
-    for grade in grades:
+    for grade in self.grades:
       curr+=grade
       i+=1
     avg = curr/i
